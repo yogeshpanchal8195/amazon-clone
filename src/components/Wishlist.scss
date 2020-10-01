@@ -1,0 +1,23 @@
+.wishlist_cont{
+    display: flex;
+    background-color: white;
+    .wishlist_cont_left{
+        flex: 1;
+        margin: 0 16px;
+        .wishlist_cont_left_label{
+            border-bottom: 1px solid lightgrey;
+        }
+        .basket_item:nth-child(n-1){
+            border-bottom: 1px solid lightgrey;
+        }
+    }
+    .wishlist_cont_right{
+        width: 300px;
+        background-color: #f3f3f3;
+        border: 1px solid #dddddd;
+        height: 140px;
+        padding: 12px;
+        margin: 16px;
+        border-radius: 4px;
+    }
+}
