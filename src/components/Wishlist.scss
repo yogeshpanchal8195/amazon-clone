@@ -21,3 +21,20 @@
         border-radius: 4px;
     }
 }
+
+@media only screen and (max-width:659px){
+    .wishlist_cont{
+        flex-direction: column;
+        .wishlist_cont_left{
+            .wishlist_cont_left_label{
+                h3{
+                    font-size: 12px;
+                    font-weight: 400;
+                }
+                h2{
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+}

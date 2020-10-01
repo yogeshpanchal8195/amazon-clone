@@ -40,3 +40,31 @@
         }
     }
 }
+
+@media only screen and (max-width:659px){
+    .basket_item{
+        flex-direction: column;
+        margin: 0;
+        padding: 12px;
+        align-items: center;
+        div{
+            font-size: 14px;
+        }
+        .basket_item_image{
+            width: 160px;
+            min-width: 160px;
+            img{
+                width: 100%;
+            }
+        }
+        .basket_item_info{
+            padding: 0;
+            .basket_item_title{
+                padding: 4px 0;
+            }
+        }
+        .add_to_basket{
+            justify-content: center;
+        }
+    }
+}

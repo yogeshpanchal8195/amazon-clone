@@ -64,3 +64,38 @@
         }
     }
 }
+
+
+@media only screen and (max-width:659px){
+    .header{
+        height: 62px;
+        padding:0 14px;
+        .header_logo{
+            height: 32px;
+            margin-top: 8px;
+        }
+        .header_search{
+            display: none;
+        }
+        .header_nav{
+            flex: 1;
+            justify-content: flex-end;
+            .header_option{
+                margin-right:10px;
+                .header_optionLineOne{
+                    font-size: 10px;
+                }
+                .header_optionLineTwo{
+                    font-size: 14px;
+                    font-weight: 500;
+                }
+                &.header_optionBasket{
+                    .header_optionLineTwo{
+                        font-size: 10px;
+                        padding-left: 2px;
+                    }
+                }
+            }
+        }
+    }
+}

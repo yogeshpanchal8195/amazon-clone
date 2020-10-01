@@ -9,6 +9,7 @@
         margin: 28px 0 18px;
     }
     .login_cont{
+        max-width: 70%;
         width: 320px;
         display: flex;
         align-items: center;
@@ -17,7 +18,7 @@
         border-radius: 6px;
         border: 1px solid lightgray;
         form{
-            width: 96%;
+            width: 100%;
         }
         p{
             font-size: 12px;
@@ -37,8 +38,10 @@
             height: 26px;
             width: 100%;
             padding: 0 6px;
+            box-sizing: border-box;
             border-radius: 3px;
             border: 1px solid darkgrey;
+            box-sizing: border-box;
             &.error{
                 border: 1px solid #eb2020;
                 outline: none;
