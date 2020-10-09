@@ -40,11 +40,13 @@ function Header() {
                         <span className="header_optionLineTwo">{!userData ? 'Sign In' : 'Sign Out'}</span>
                     </div>
                 </Link>
-                {/* <div className="header_option">
-                    <span className="header_optionLineOne">Returns</span>
-                    <span className="header_optionLineTwo">Orders</span>
-                </div>
                 <div className="header_option">
+                    <span className="header_optionLineOne">Returns</span>
+                    <Link to="/orders">
+                        <span className="header_optionLineTwo">Orders</span>
+                    </Link>
+                </div>
+                {/* <div className="header_option">
                     <span className="header_optionLineOne">Your </span>
                     <span className="header_optionLineTwo">Prime</span>
                 </div> */}

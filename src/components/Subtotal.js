@@ -2,10 +2,22 @@ import React from 'react';
 import './Subtotal.scss';
 import CurrencyFormat from 'react-currency-format';
 import { useStateValue } from '../StateProvider';
+import { Link, useHistory } from 'react-router-dom';
 
 function Subtotal() {
 
-    const [{ cartItems }] = useStateValue();
+    const [{ cartItems, userData }] = useStateValue();
+    const history = useHistory()
+
+    const redirect = () => {
+        console.log(userData)
+        if (userData && userData.uid)
+            history.push('/payment-checkout');
+        else {
+            alert('Please login first.')
+            history.push('/login');
+        }
+    }
     return (
         <div className="subtotal">
             <CurrencyFormat
@@ -25,7 +37,7 @@ function Subtotal() {
                     </>
                 }
             />
-            <button>Proceed to Checkout</button>
+            <button onClick={redirect}>Proceed to Checkout</button>
         </div>
     )
 }

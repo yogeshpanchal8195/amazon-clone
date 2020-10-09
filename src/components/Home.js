@@ -9,7 +9,7 @@ var productsList = [
     {
         id: 1,
         rating: 3,
-        price: "12.24",
+        price: "11.00",
         title: "AmazonBasics Lightweight Super Soft Easy Care Microfiber Sheet Set with 16 Deep Pockets - Twin, Dark Grey",
         imgUrl: "https://m.media-amazon.com/images/I/71f8d7Y6EUL._AC_UY218_.jpg"
     },
@@ -23,28 +23,28 @@ var productsList = [
     {
         id: 3,
         rating: 3,
-        price: "12.24",
+        price: "32.20",
         title: "VicTsing MM057 2.4G Wireless Mouse Portable Mobile Optical Mouse with USB Receiver, 5 Adjustable DPI Levels,",
         imgUrl: "https://images-na.ssl-images-amazon.com/images/I/41PpNHdOKJL._AC_US160_.jpg"
     },
     {
         id: 4,
         rating: 3,
-        price: "12.24",
+        price: "122.11",
         title: "Lenovo IdeaPad 3 14 FHD (1920 x 1080) Display, AMD Ryzen 5 3500U Processor, 8GB DDR4 RAM, 256GB SSD, AMD Radeon Vega 8 Graphics, Narrow Bezel, Windows 10, 81W0003QUS, Abyss Blue",
         imgUrl: "https://images-na.ssl-images-amazon.com/images/I/41hCoCHfdjL._AC_US160_.jpg"
     },
     {
         id: 5,
         rating: 3,
-        price: "12.24",
+        price: "2.40",
         title: "If You Tell: A True Story of Murder, Family Secrets, and the Unbreakable Bond of Sisterhood ",
         imgUrl: "https://m.media-amazon.com/images/I/410K-S--pmL.jpg"
     },
     {
         id: 6,
         rating: 3,
-        price: "12.24",
+        price: "3.44",
         title: "Lying Next to Me",
         imgUrl: "https://m.media-amazon.com/images/I/41rSaQpivNL.jpg"
     }

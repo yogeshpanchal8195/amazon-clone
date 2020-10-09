@@ -2,14 +2,14 @@ import React from 'react';
 import './BasketItem.scss';
 import { useStateValue } from '../StateProvider';
 
-function BasketItem({ id, title, price, rating, imgUrl ,newId }) {
+function BasketItem({ id, title, price, rating, imgUrl, newId ,hideButton}) {
 
-    const [,dispatch] = useStateValue();
+    const [, dispatch] = useStateValue();
 
     const removeFromBasket = () => {
         dispatch({
-            type:"REMOVE_FROM_CART",
-            payload:newId
+            type: "REMOVE_FROM_CART",
+            payload: newId
         })
     }
 
@@ -28,12 +28,14 @@ function BasketItem({ id, title, price, rating, imgUrl ,newId }) {
                     <strong>{price}</strong>
                 </div>
                 <div className="basket_item_rating">
-                    {Array(Math.floor(rating)).fill("⭐").map((ele,idx) => (
+                    {Array(Math.floor(rating)).fill("⭐").map((ele, idx) => (
                         <div key={idx}>{ele}</div>
                     ))}
                 </div>
                 <div className="add_to_basket">
-                    <button onClick={removeFromBasket}>Remove from basket</button>
+                    {
+                        !hideButton && <button onClick={removeFromBasket}>Remove from basket</button>
+                    }
                 </div>
             </div>
 

@@ -8,8 +8,14 @@ import { useStateValue } from './StateProvider';
 import Login from './components/Login';
 import SignUp from './components/SignUp';
 import { auth } from './firebase';
+import Payment from './components/Payment';
+import { loadStripe } from '@stripe/stripe-js';
+import { Elements } from '@stripe/react-stripe-js'
+import Orders from './components/Orders';
 
 function App() {
+
+  const stripePromise= loadStripe('Insert Public Key')
 
   const history = useHistory();
   const [{ }, dispatch] = useStateValue();
@@ -48,8 +54,16 @@ function App() {
               <Route path={`${url}`} exact>
                 <Home />
               </Route>
+              <Route path={`${url}payment-checkout`} exact>
+                <Elements stripe={stripePromise}>
+                  <Payment />
+                </Elements>
+              </Route>
               <Route path={`${url}checkout`} exact>
                 <Wishlist />
+              </Route>
+              <Route path={`${url}orders`} exact>
+                <Orders />
               </Route>
             </>
           )}>
