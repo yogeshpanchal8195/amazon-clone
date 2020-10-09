@@ -1,0 +1,35 @@
+.orders{
+    width: 94%;
+    margin: auto;
+    padding-bottom: 28px;
+    .order_data{
+        background-color: white;
+        margin: 22px 0;
+        border-radius: 8px;
+        .order_data_details{
+            padding: 14px 18px;
+            display: flex;
+            justify-content: space-between;
+            p{
+                margin: 0;
+            }
+            .order_data_date{
+                font-size: 16px;
+            }
+            .order_data_amt{
+                font-size: 20px;
+                font-weight: 600;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:759px){
+    .orders{
+        .order_data{
+            .order_data_details{
+                flex-direction: column;
+            }
+        }
+    }
+}
